@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BibliotecaApp.Entidades
+{
+    public class Prestamo
+    {
+        public int IdPrestamo { get; set; }
+        public int IdUsuario { get; set; }
+        public DateTime FechaPrestamo { get; set; }
+        public DateTime FechaDevolucionEsperada { get; set; }
+        public DateTime? FechaDevolucionReal { get; set; }
+        public string Estado { get; set; }
+    }
+}
