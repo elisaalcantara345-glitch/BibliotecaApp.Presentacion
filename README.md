@@ -54,7 +54,7 @@ Documento presentado como evidencia de la implementación del proyecto final de 
 
 ---
 
-## INTRODUCCIÓN
+## 1. INTRODUCCIÓN
 La administración eficiente de recursos bibliográficos en instituciones educativas requiere sistemas de información que automaticen la trazabilidad de los libros y el ciclo de vida de los préstamos. El presente documento detalla la arquitectura, el diseño de base de datos y la implementación del **Sistema de Gestión de Biblioteca**, desarrollado en C# Windows Forms bajo el enfoque de Programación Orientada a Objetos (POO) en una arquitectura en N-Capas con persistencia en Microsoft SQL Server.
 
 ---
