@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="BibliotecaApp.Datos/BibliotecaApp.Datos.csproj" />
-  <Project Path="BibliotecaApp.Entidades/BibliotecaApp.Entidades.csproj" />
-  <Project Path="BibliotecaApp.Negocio/BibliotecaApp.Negocio.csproj" />
-  <Project Path="BibliotecaApp.Presentacion/BibliotecaApp.Presentacion.csproj" />
-</Solution>
