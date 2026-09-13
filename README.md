@@ -1,16 +1,16 @@
-# **Sistema de Gestión de Biblioteca **
+# Sistema de Gestión de Biblioteca 
 
 Aplicación de escritorio desarrollada para la administración y automatización de catálogos bibliográficos, control de inventario en tiempo real, gestión de usuarios y registro de préstamos y devoluciones.
 
 
-## ** Características Principales**
+## Características Principales
 
 * **Gestión de Catálogo (CRUD):** Control total de libros, vinculados dinámicamente con autores y categorías.  
 * **Módulo de Préstamos y Devoluciones:** Validación en tiempo real de disponibilidad de stock, estados de préstamos y selección directa desde DataGridView.  
 * **Gestión de Usuarios y Autores:** Registro detallado de miembros institucionales habilitados para el préstamo.  
 * **Interfaz Intuitiva:** Interfaz gráfica responsiva e intuitiva construida sobre Windows Forms.
 
-## **Arquitectura del Sistema**
+## Arquitectura del Sistema
 
 El proyecto está diseñado bajo los principios de la **Programación Orientada a Objetos (POO)** utilizando una **Arquitectura en 4 Capas**:
 
@@ -30,7 +30,7 @@ El proyecto está diseñado bajo los principios de la **Programación Orientada 
                 ▼  
       \[ Microsoft SQL Server \]
 
-## ** Instalación y Configuración**
+##  Instalación y Configuración
 
 ### **Requisitos Previos**
 
