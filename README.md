@@ -4,8 +4,7 @@
 # SISTEMA DE GESTIÓN DE BIBLIOTECA
 ### Proyecto Final - Programación Avanzada
 
-**Presentado por:** [Tu Nombre Completo]  
-**Docente:** [Nombre del Docente]  
+**Presentado por:** Elisa Alcantara 
 **Asignatura:** Programación Avanzada  
 **Institución:** Institución Universitaria  
 **Fecha:** Septiembre de 2026  
@@ -126,23 +125,29 @@ La institución educativa registraba de forma manual sus procesos de inventario 
                              | + Estado: string  |
                              +-------------------+
 ```
- 5.3 Modelo Entidad-Relación (SQL Server)
+### 5.3 Modelo Entidad-Relación (SQL Server)
 Autor (1) -> Libro (N)
 
 Usuario (1) -> Prestamo (N)
 
 Libro (1) -> Prestamo (N)
 
-5.4 Diccionario de Datos
+### 5.4 Diccionario de Datos
 
 Campo,Tipo,Nulo,Descripción / Regla
 
 IdPrestamo,"INT (PK, IDENTITY)",NO,Identificador único del préstamo.
+
 IdUsuario,INT (FK),NO,Llave foránea hacia la tabla Usuario.
+
 IdLibro,INT (FK),NO,Llave foránea hacia la tabla Libro.
+
 FechaPrestamo,DATETIME,NO,Fecha de salida (Por defecto GETDATE()).
+
 FechaDevolucion,DATETIME,SÍ,Fecha efectiva de retorno.
+
 Estado,VARCHAR(20),NO,Estado del préstamo (Prestado / Devuelto).
+
 
  6. ARQUITECTURA DEL SISTEMA
 El proyecto implementa una arquitectura en 4 Capas desacopladas:
