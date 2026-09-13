@@ -61,10 +61,10 @@ La administración eficiente de recursos bibliográficos en instituciones educat
 
 ## OBJETIVOS
 
-###  Objetivo General
+### 2.1 Objetivo General
 Desarrollar una aplicación de escritorio robusta mediante C# y SQL Server que automatice la gestión de catálogo, autores, usuarios, préstamos y devoluciones de una biblioteca institucional.
 
-###  Objetivos Específicos
+### 2.2 Objetivos Específicos
 - Aplicar los principios de la Programación Orientada a Objetos (Encapsulamiento, Abstracción, Modularidad).
 - Diseñar e implementar una base de datos relacional con integridad referencial en SQL Server.
 - Implementar una arquitectura por capas (`Presentacion`, `Negocio`, `Datos`, `Entidades`) para garantizar el desacoplamiento.
@@ -80,7 +80,7 @@ La institución educativa registraba de forma manual sus procesos de inventario 
 
 ## 4. ANÁLISIS DE REQUERIMIENTOS
 
-### Requerimientos Funcionales
+### 4.1 Requerimientos Funcionales
 - **RF01. Gestión de Libros:** CRUD completo de catálogo, asignación de ISBN único, stock y vinculación con Autores/Categorías.
 - **RF02. Gestión de Autores:** Registro y consulta de autores (Código, Nombre, Apellidos, Nacionalidad, Fecha Nacimiento).
 - **RF03. Gestión de Categorías:** Clasificación por áreas temáticas (Programación, Redes, BD, etc.).
@@ -88,7 +88,7 @@ La institución educativa registraba de forma manual sus procesos de inventario 
 - **RF05. Gestión de Préstamos:** Registro de salida de libros, control de existencias en tiempo real y asignación de estado (`Prestado`).
 - **RF06. Gestión de Devoluciones:** Procesamiento de retorno de libros, actualización de stock y cambio de estado a `Devuelto`.
 
-### Requerimientos No Funcionales
+### 4.2 Requerimientos No Funcionales
 - Interfaz gráfica amigable e intuitiva desarrollada en Windows Forms.
 - Validación de campos obligatorios y formato de correo/teléfono.
 - Mensajes claros al usuario ante confirmaciones o errores (`MessageBox`).
@@ -98,12 +98,12 @@ La institución educativa registraba de forma manual sus procesos de inventario 
 
 ## 5. MODELADO DEL SISTEMA
 
-### Casos de Uso
+### 5.1 Casos de Uso
 - **UC01 - Gestionar Libros:** El administrador registra, actualiza o elimina ejemplares del catálogo.
 - **UC02 - Registrar Préstamo:** El sistema valida disponibilidad de stock y existencia del usuario antes de crear el préstamo.
 - **UC03 - Procesar Devolución:** Se selecciona el préstamo activo de la grilla y se actualiza el estado y el inventario.
 
-### Diagrama de Clases (C# POO)
+### 5.2 Diagrama de Clases (C# POO)
 ```
 +-------------------+        +-------------------+
 |      Autor        |        |       Libro       |
@@ -126,6 +126,22 @@ La institución educativa registraba de forma manual sus procesos de inventario 
                              | + Estado: string  |
                              +-------------------+
 ```
+ 5.3 Modelo Entidad-Relación (SQL Server)
+Autor (1) -> Libro (N)
+
+Usuario (1) -> Prestamo (N)
+
+Libro (1) -> Prestamo (N)
+
+5.4 Diccionario de Datos
+Campo,Tipo,Nulo,Descripción / Regla
+IdPrestamo,"INT (PK, IDENTITY)",NO,Identificador único del préstamo.
+IdUsuario,INT (FK),NO,Llave foránea hacia la tabla Usuario.
+IdLibro,INT (FK),NO,Llave foránea hacia la tabla Libro.
+FechaPrestamo,DATETIME,NO,Fecha de salida (Por defecto GETDATE()).
+FechaDevolucion,DATETIME,SÍ,Fecha efectiva de retorno.
+Estado,VARCHAR(20),NO,Estado del préstamo (Prestado / Devuelto).
+
  6. ARQUITECTURA DEL SISTEMA
 El proyecto implementa una arquitectura en 4 Capas desacopladas:
 
