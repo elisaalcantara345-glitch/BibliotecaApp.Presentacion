@@ -33,7 +33,7 @@ Documento presentado como evidencia de la implementación del proyecto final de 
 
 ## TABLA DE CONTENIDO
 1. [Introducción](#1-introducción)
-2. [Objetivos](#2-objetivos)
+2. [Objetivos](#objetivos)
    - 2.1 [Objetivo General](#21-objetivo-general)
    - 2.2 [Objetivos Específicos](#22-objetivos-específicos)
 3. [Planteamiento del Problema](#3-planteamiento-del-problema)
@@ -59,12 +59,12 @@ La administración eficiente de recursos bibliográficos en instituciones educat
 
 ---
 
-## 2. OBJETIVOS
+## OBJETIVOS
 
-### 2.1 Objetivo General
+###  Objetivo General
 Desarrollar una aplicación de escritorio robusta mediante C# y SQL Server que automatice la gestión de catálogo, autores, usuarios, préstamos y devoluciones de una biblioteca institucional.
 
-### 2.2 Objetivos Específicos
+###  Objetivos Específicos
 - Aplicar los principios de la Programación Orientada a Objetos (Encapsulamiento, Abstracción, Modularidad).
 - Diseñar e implementar una base de datos relacional con integridad referencial en SQL Server.
 - Implementar una arquitectura por capas (`Presentacion`, `Negocio`, `Datos`, `Entidades`) para garantizar el desacoplamiento.
@@ -80,7 +80,7 @@ La institución educativa registraba de forma manual sus procesos de inventario 
 
 ## 4. ANÁLISIS DE REQUERIMIENTOS
 
-### 4.1 Requerimientos Funcionales
+### Requerimientos Funcionales
 - **RF01. Gestión de Libros:** CRUD completo de catálogo, asignación de ISBN único, stock y vinculación con Autores/Categorías.
 - **RF02. Gestión de Autores:** Registro y consulta de autores (Código, Nombre, Apellidos, Nacionalidad, Fecha Nacimiento).
 - **RF03. Gestión de Categorías:** Clasificación por áreas temáticas (Programación, Redes, BD, etc.).
@@ -88,7 +88,7 @@ La institución educativa registraba de forma manual sus procesos de inventario 
 - **RF05. Gestión de Préstamos:** Registro de salida de libros, control de existencias en tiempo real y asignación de estado (`Prestado`).
 - **RF06. Gestión de Devoluciones:** Procesamiento de retorno de libros, actualización de stock y cambio de estado a `Devuelto`.
 
-### 4.2 Requerimientos No Funcionales
+### Requerimientos No Funcionales
 - Interfaz gráfica amigable e intuitiva desarrollada en Windows Forms.
 - Validación de campos obligatorios y formato de correo/teléfono.
 - Mensajes claros al usuario ante confirmaciones o errores (`MessageBox`).
@@ -98,12 +98,12 @@ La institución educativa registraba de forma manual sus procesos de inventario 
 
 ## 5. MODELADO DEL SISTEMA
 
-### 5.1 Casos de Uso
+### Casos de Uso
 - **UC01 - Gestionar Libros:** El administrador registra, actualiza o elimina ejemplares del catálogo.
 - **UC02 - Registrar Préstamo:** El sistema valida disponibilidad de stock y existencia del usuario antes de crear el préstamo.
 - **UC03 - Procesar Devolución:** Se selecciona el préstamo activo de la grilla y se actualiza el estado y el inventario.
 
-### 5.2 Diagrama de Clases (C# POO)
+### Diagrama de Clases (C# POO)
 ```
 +-------------------+        +-------------------+
 |      Autor        |        |       Libro       |
@@ -126,7 +126,7 @@ La institución educativa registraba de forma manual sus procesos de inventario 
                              | + Estado: string  |
                              +-------------------+
 ```
-6. ARQUITECTURA DEL SISTEMA
+ 6. ARQUITECTURA DEL SISTEMA
 El proyecto implementa una arquitectura en 4 Capas desacopladas:
 
 BibliotecaApp.Presentacion: Formularios WinForms (FrmPrincipal, FrmLibros, FrmPrestamos, FrmAutores, FrmUsuarios).
@@ -137,7 +137,7 @@ BibliotecaApp.Datos: Acceso a la base de datos SQL Server mediante comandos ADO.
 
 BibliotecaApp.Entidades: Clases DTO que encapsulan los datos del dominio (Autor, Libro, Usuario, Prestamo).
 
-7. EXPLICACIÓN DE MÓDULOS DESARROLLADOS
+ 7. EXPLICACIÓN DE MÓDULOS DESARROLLADOS
 Módulo Principal (FrmPrincipal.cs)
 Panel de navegación modal que conecta los sub-módulos del sistema evitando la duplicación de instancias mediante ShowDialog().
 
