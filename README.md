@@ -156,12 +156,29 @@ private void dgvPrestamos_CellClick(object sender, DataGridViewCellEventArgs e)
     }
 }
 ```
-8. PRUEBAS DE FUNCIONAMIENTO Y CAPTURAS DE PANTALLA
-Prueba de Menú Principal: Enlace funcional de los cuatro módulos (Libros, Autores, Usuarios, Préstamos).
+## 8. PRUEBAS DE FUNCIONAMIENTO Y CAPTURAS DE PANTALLA
 
-Prueba de Selección en DataGridView: Al seleccionar una fila en la grilla de préstamos, el valor del IdPrestamo se captura correctamente evitando excepciones NullReferenceException.
+### Arquitectura y Estructura del Proyecto
+![Estructura del Proyecto](BibliotecaApp.Presentacion/assets/estructura.png)
 
-Prueba de Devolución: La invocación del método prestamoNegocio.RegistrarDevolucion(idPrestamoSeleccionado) actualiza el estado de la transacción a Devuelto y refresca el DataGridView.
+### Módulo Principal
+![Menú Principal](BibliotecaApp.Presentacion/assets/Menu.png)
+
+### Gestión de Autores
+![Módulo Autores](BibliotecaApp.Presentacion/assets/Autores.png)
+
+### Gestión de Usuarios
+![Módulo Usuarios](BibliotecaApp.Presentacion/assets/Usuario.png)
+
+### Gestión de Libros
+![Módulo Libros](BibliotecaApp.Presentacion/assets/Libros.png)
+![Registrar Libro](BibliotecaApp.Presentacion/assets/Registrar.png)
+![Eliminar Libro](BibliotecaApp.Presentacion/assets/Eliminar%20libro.png)
+
+### Gestión de Préstamos y Devoluciones
+![Módulo Préstamos](BibliotecaApp.Presentacion/assets/prestamo.png)
+![Proceso de Devolución](BibliotecaApp.Presentacion/assets/Devolucion.png)
+![Devolución Registrada](BibliotecaApp.Presentacion/assets/Devolucion%20registrada.png)
 
 9. CONCLUSIONES
 Se logró la construcción de un sistema de gestión de biblioteca escalable gracias a la separación de responsabilidades que ofrece la arquitectura N-Capas.
