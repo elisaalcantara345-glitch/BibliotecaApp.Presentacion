@@ -134,7 +134,9 @@ Usuario (1) -> Prestamo (N)
 Libro (1) -> Prestamo (N)
 
 5.4 Diccionario de Datos
+
 Campo,Tipo,Nulo,Descripción / Regla
+
 IdPrestamo,"INT (PK, IDENTITY)",NO,Identificador único del préstamo.
 IdUsuario,INT (FK),NO,Llave foránea hacia la tabla Usuario.
 IdLibro,INT (FK),NO,Llave foránea hacia la tabla Libro.
