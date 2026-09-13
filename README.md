@@ -159,26 +159,26 @@ private void dgvPrestamos_CellClick(object sender, DataGridViewCellEventArgs e)
 ## 8. PRUEBAS DE FUNCIONAMIENTO Y CAPTURAS DE PANTALLA
 
 ### Arquitectura y Estructura del Proyecto
-![Estructura del Proyecto](assets/estructura.png)
+![Estructura del Proyecto](BibliotecaApp.Presentacion/assets/estructura.png)
 
 ### Módulo Principal
-![Menú Principal](assets/Menu.png)
+![Menú Principal](BibliotecaApp.Presentacion/assets/Menu.png)
 
 ### Gestión de Autores
-![Módulo Autores](assets/Autores.png)
+![Módulo Autores](BibliotecaApp.Presentacion/assets/Autores.png)
 
 ### Gestión de Usuarios
-![Módulo Usuarios](assets/Usuario.png)
+![Módulo Usuarios](BibliotecaApp.Presentacion/assets/Usuario.png)
 
 ### Gestión de Libros
-![Módulo Libros](assets/Libros.png)
-![Registrar Libro](assets/Registrar.png)
-![Eliminar Libro](assets/Eliminar%20libro.png)
+![Módulo Libros](BibliotecaApp.Presentacion/assets/Libros.png)
+![Registrar Libro](BibliotecaApp.Presentacion/assets/Registrar.png)
+![Eliminar Libro](BibliotecaApp.Presentacion/assets/Eliminar_libro.png)
 
 ### Gestión de Préstamos y Devoluciones
-![Módulo Préstamos](assets/prestamo.png)
-![Proceso de Devolución](assets/Devolucion.png)
-![Devolución Registrada](assets/Devolucion%20registrada.png)
+![Módulo Préstamos](BibliotecaApp.Presentacion/assets/prestamo.png)
+![Proceso de Devolución](BibliotecaApp.Presentacion/assets/Devolucion.png)
+![Devolución Registrada](BibliotecaApp.Presentacion/assets/Devolucion_registrada.png)
 
 9. CONCLUSIONES
 Se logró la construcción de un sistema de gestión de biblioteca escalable gracias a la separación de responsabilidades que ofrece la arquitectura N-Capas.
