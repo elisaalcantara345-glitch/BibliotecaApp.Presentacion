@@ -149,7 +149,7 @@ FechaDevolucion,DATETIME,SÍ,Fecha efectiva de retorno.
 Estado,VARCHAR(20),NO,Estado del préstamo (Prestado / Devuelto).
 
 
-### 6. ARQUITECTURA DEL SISTEMA
+ 6. ARQUITECTURA DEL SISTEMA
 El proyecto implementa una arquitectura en 4 Capas desacopladas:
 
 BibliotecaApp.Presentacion: Formularios WinForms (FrmPrincipal, FrmLibros, FrmPrestamos, FrmAutores, FrmUsuarios).
@@ -160,7 +160,7 @@ BibliotecaApp.Datos: Acceso a la base de datos SQL Server mediante comandos ADO.
 
 BibliotecaApp.Entidades: Clases DTO que encapsulan los datos del dominio (Autor, Libro, Usuario, Prestamo).
 
-### 7. EXPLICACIÓN DE MÓDULOS DESARROLLADOS
+ 7. EXPLICACIÓN DE MÓDULOS DESARROLLADOS
 Módulo Principal (FrmPrincipal.cs)
 Panel de navegación modal que conecta los sub-módulos del sistema evitando la duplicación de instancias mediante ShowDialog().
 
